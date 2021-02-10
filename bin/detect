@@ -2,10 +2,10 @@
 
 BUILD_DIR=$1
 
-if [ -f $BUILD_DIR/info.rkt ]; then
+if [ -f $BUILD_DIR/README.md ]; then
   echo "Racket" && exit 0
 else
-  echo "Failed to locate ‘info.rkt’ file."
+  echo "Failed to locate ‘README.md’ file."
 fi
 
 exit 1
