@@ -90,7 +90,7 @@ export PATH=$RACKET_DIR/bin:$PATH
 
 echo "-----> Setting up environment"
 
-mkdir .profile.d
+mkdir -p .profile.d
 echo 'export PATH=$PATH:$HOME/racket/bin' >> .profile.d/setup_environment.sh
 
 echo "-----> Installing application package"
