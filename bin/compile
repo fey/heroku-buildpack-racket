@@ -42,7 +42,7 @@ if [[ "$RACKET_VERSION" =~ '-minimal'$ ]]; then
   RACKET_VERSION=${RACKET_VERSION%-minimal}
   if [[ ${RACKET_VERSION,,} == 'current' || ${RACKET_VERSION,,} == 'head' ]]; then
     echo "     - Using minimal Racket development snapshot"
-    RACKET_INSTALLER='http://www.cs.utah.edu/plt/snapshots/current/installers/min-racket-current-x86_64-linux-precise.sh'
+    RACKET_INSTALLER='https://www.cs.utah.edu/plt/snapshots/current/installers/racket-minimal-8.3.0.9-x86_64-linux-xenial-cs.sh'
   else
     echo "     - Using minimal Racket version $RACKET_VERSION"
     if [[ "$RACKET_VERSION" =~ ^6.[0-4](\..+)?$ ]]; then
